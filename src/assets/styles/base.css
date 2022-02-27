@@ -1,10 +1,25 @@
+@font-face {
+  font-family: "Voyage";
+  src: local("Voyage"), url(../fonts/Voyage-Bold.ttf) format("woff");
+}
+
+@font-face {
+  font-family: "Noah";
+  src: local("Noah"), url(../fonts/agenda-bold.ttf) format("woff");
+}
+
 body {
   margin: 0;
-  font-family: "Gilroy", sans-serif;
+  font-family: "Noah", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
   min-height: 100vh;
+  color: #14186a;
+}
+
+body.disable-scroll {
+  overflow: hidden;
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -19,6 +34,7 @@ input[type="number"] {
   -moz-appearance: textfield;
 }
 
-body {
-  cursor: none !important;
+input,
+button {
+  font-family: "Noah", sans-serif;
 }
