@@ -37,14 +37,14 @@ export default SectionConcept;
 
 const SectionWrapper = styled.div`
   &.bg-spin-up {
-    animation: bgSpinUp 2s ease;
+    animation: bgSpinUp 10s ease;
   }
 
   @keyframes bgSpinUp {
     from {
       transform: rotate(0deg);
     }
-    30% {
+    20% {
       transform: rotate(-5deg);
     }
     to {
@@ -53,14 +53,14 @@ const SectionWrapper = styled.div`
   }
 
   &.bg-spin-down {
-    animation: bgSpinDown 2s ease;
+    animation: bgSpinDown 10s ease;
   }
 
   @keyframes bgSpinDown {
     from {
       transform: rotate(0deg);
     }
-    30% {
+    20% {
       transform: rotate(5deg);
     }
     to {

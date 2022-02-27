@@ -4,9 +4,7 @@ import styled from "styled-components";
 const NewRestaurants = ({ newRestaurantsContainer }) => (
   <NewRestaurantsWrapper ref={newRestaurantsContainer}>
     <div className="home-new-title">
-      <i className="fas fa-rocket" />
       <span className="home-new-title-text">Newcomers @ Elden</span>
-      <i className="fas fa-rocket" />
     </div>
 
     <div className="new-restaurants-container">
@@ -21,14 +19,14 @@ export default NewRestaurants;
 
 const NewRestaurantsWrapper = styled.div`
   &.bg-spin-up {
-    animation: bgSpinUp 2s ease;
+    animation: bgSpinUp 10s ease;
   }
 
   @keyframes bgSpinUp {
     from {
       transform: rotate(0deg);
     }
-    30% {
+    20% {
       transform: rotate(-5deg);
     }
     to {
@@ -37,14 +35,14 @@ const NewRestaurantsWrapper = styled.div`
   }
 
   &.bg-spin-down {
-    animation: bgSpinDown 2s ease;
+    animation: bgSpinDown 10s ease;
   }
 
   @keyframes bgSpinDown {
     from {
       transform: rotate(0deg);
     }
-    30% {
+    20% {
       transform: rotate(5deg);
     }
     to {
@@ -67,7 +65,7 @@ const NewRestaurantsWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 20%;
+  padding: 10%;
   animation: 1s slideFromBottomMiddleSection;
   height: 80vh;
   width: 100%;
@@ -82,7 +80,6 @@ const NewRestaurantsWrapper = styled.div`
 
     i {
       position: relative;
-      color: $foodlab;
       animation: 3s rotateSvg infinite;
     }
 

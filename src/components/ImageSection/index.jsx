@@ -91,14 +91,14 @@ const SectionImageWrapper = styled.div`
   color: #638eff;
 
   &.bg-spin-up {
-    animation: bgSpinUp 2s ease;
+    animation: bgSpinUp 10s ease;
   }
 
   @keyframes bgSpinUp {
     from {
       transform: rotate(0deg);
     }
-    30% {
+    20% {
       transform: rotate(-5deg);
     }
     to {
@@ -107,7 +107,19 @@ const SectionImageWrapper = styled.div`
   }
 
   &.bg-spin-down {
-    animation: bgSpinDown 2s ease;
+    animation: bgSpinDown 10s ease;
+  }
+
+  @keyframes bgSpinDown {
+    from {
+      transform: rotate(0deg);
+    }
+    20% {
+      transform: rotate(5deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
   }
 
   @keyframes slideFromLeftHome {
@@ -120,6 +132,7 @@ const SectionImageWrapper = styled.div`
       opacity: 1;
     }
   }
+
   @keyframes underlineHome {
     from {
       width: 0%;

@@ -34,6 +34,15 @@ const Hero = () => {
       <ScrollIndicatorWrapper>
         <div className="mouse-scroll-ball" />
       </ScrollIndicatorWrapper>
+      <div className="dot blue-dot-center" />
+      <div className="dot blue-dot-bottom" />
+      <div className="dot blue-dot-right" />
+      <div className="dot purple-dot-top" />
+      <div className="dot purple-dot-right" />
+      <div className="dot purple-dot-bottom" />
+      <div className="dot green-dot-left" />
+      <div className="dot green-dot-right" />
+      <div className="dot green-dot-top" />
     </HeroWrapper>
   );
 };
@@ -64,6 +73,97 @@ const HeroWrapper = styled.div`
       font-family: "Voyage";
       text-align: center;
       font-size: 90px;
+      width: 60%;
+    }
+  }
+
+  .dot {
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    opacity: 0.3;
+  }
+
+  .blue-dot-center {
+    top: 7vh;
+    left: 35vw;
+    background-color: #638dff;
+    transform: rotate(42deg);
+    animation: 5s rotateDots infinite linear;
+  }
+
+  .blue-dot-right {
+    top: 17vh;
+    right: 10vw;
+    background-color: #638dff;
+    transform: rotate(67deg);
+    animation: 3s rotateDots infinite;
+  }
+
+  .blue-dot-bottom {
+    top: 60vh;
+    left: 20vw;
+    background-color: #638dff;
+    transform: rotate(67deg);
+    animation: 3s rotateDots infinite;
+  }
+
+  .green-dot-left {
+    top: 90vh;
+    left: 30vw;
+    background-color: #3ab6ac;
+    transform: rotate(67deg);
+    animation: 5s rotateDots infinite linear;
+  }
+
+  .green-dot-right {
+    top: 75vh;
+    right: 4vw;
+    background-color: #3ab6ac;
+    animation: 3s rotateDots infinite;
+  }
+
+  .green-dot-top {
+    top: 15vh;
+    left: 10vw;
+    background-color: #3ab6ac;
+    animation: 3s rotateDots infinite;
+  }
+
+  .purple-dot-top {
+    top: 27vh;
+    left: 52vw;
+    background-color: #fe765f;
+    animation: 5s rotateDots infinite linear;
+  }
+
+  .purple-dot-bottom {
+    top: 80vh;
+    left: 5vw;
+    background-color: #fe765f;
+    animation: 2s rotateDots infinite;
+  }
+
+  .purple-dot-right {
+    top: 60vh;
+    right: 25vw;
+    background-color: #fe765f;
+    animation: 2s rotateDots infinite;
+  }
+
+  @keyframes rotateDots {
+    from {
+      margin-top: 0px;
+      transform: rotate(0deg);
+    }
+    50% {
+      margin-top: 20px;
+      transform: rotate(180deg);
+    }
+    to {
+      margin-top: 0px;
+      transform: rotate(360deg);
     }
   }
 `;
@@ -118,6 +218,7 @@ const CursorShapesWrapper = styled.div`
     position: absolute;
     top: 0;
     will-change: transform;
+    transition: 1s all ease;
 
     &.blue {
       background: #638dff;
