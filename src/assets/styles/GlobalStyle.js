@@ -2,11 +2,11 @@ import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
 .bg-spin-up {
-  animation: bgSpinUp 4s ease;
+  animation: bgSpinUp 2s ease;
 }
 
 .bg-spin-down {
-  animation: bgSpinDown 4s ease;
+  animation: bgSpinDown 2s ease;
 }
 
 .dot {
