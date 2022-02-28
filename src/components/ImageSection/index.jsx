@@ -25,27 +25,6 @@ const SectionImage = ({ imageSectionRef }) => (
 export default SectionImage;
 
 const ButtonWrapper = styled.div`
-  @keyframes bgSpinDown {
-    from {
-      transform: rotate(0deg);
-    }
-    30% {
-      transform: rotate(5deg);
-    }
-    to {
-      transform: rotate(0deg);
-    }
-  }
-
-  @keyframes slideToRightText {
-    from {
-      left: -182px;
-    }
-    to {
-      left: 230px;
-    }
-  }
-
   position: relative;
   overflow: hidden;
   background: #ff636a;
@@ -89,67 +68,6 @@ const ButtonWrapper = styled.div`
 
 const SectionImageWrapper = styled.div`
   color: #638eff;
-
-  &.bg-spin-up {
-    animation: bgSpinUp 10s ease;
-  }
-
-  @keyframes bgSpinUp {
-    from {
-      transform: rotate(0deg);
-    }
-    20% {
-      transform: rotate(-5deg);
-    }
-    to {
-      transform: rotate(0deg);
-    }
-  }
-
-  &.bg-spin-down {
-    animation: bgSpinDown 10s ease;
-  }
-
-  @keyframes bgSpinDown {
-    from {
-      transform: rotate(0deg);
-    }
-    20% {
-      transform: rotate(5deg);
-    }
-    to {
-      transform: rotate(0deg);
-    }
-  }
-
-  @keyframes slideFromLeftHome {
-    from {
-      left: 0%;
-      opacity: 0;
-    }
-    to {
-      left: 20%;
-      opacity: 1;
-    }
-  }
-
-  @keyframes underlineHome {
-    from {
-      width: 0%;
-    }
-    to {
-      width: 50%;
-    }
-  }
-
-  @keyframes overlayHome {
-    from {
-      width: 100%;
-    }
-    to {
-      width: 0%;
-    }
-  }
   display: flex;
   align-items: center;
   width: 100%;

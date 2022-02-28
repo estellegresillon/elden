@@ -1,24 +1,6 @@
 import styled from "styled-components";
 
-export const CONCEPT_STEPS = [
-  {
-    nb: "one",
-    src: "/search.svg",
-    description:
-      "Customer loyalty is our priority as we are only in delivering from the best providers",
-  },
-  {
-    nb: "two",
-    src: "/map.svg",
-    description: "A large choice of food delivery for any taste and budget",
-  },
-  {
-    nb: "three",
-    src: "/mailbox.svg",
-    description:
-      "Get updated before everyone else of the new trending places in your mailbox",
-  },
-];
+import { CONCEPT_STEPS } from "utils/constants";
 
 const SectionConcept = ({ conceptRef }) => (
   <SectionWrapper ref={conceptRef}>
@@ -36,68 +18,6 @@ const SectionConcept = ({ conceptRef }) => (
 export default SectionConcept;
 
 const SectionWrapper = styled.div`
-  &.bg-spin-up {
-    animation: bgSpinUp 10s ease;
-  }
-
-  @keyframes bgSpinUp {
-    from {
-      transform: rotate(0deg);
-    }
-    20% {
-      transform: rotate(-5deg);
-    }
-    to {
-      transform: rotate(0deg);
-    }
-  }
-
-  &.bg-spin-down {
-    animation: bgSpinDown 10s ease;
-  }
-
-  @keyframes bgSpinDown {
-    from {
-      transform: rotate(0deg);
-    }
-    20% {
-      transform: rotate(5deg);
-    }
-    to {
-      transform: rotate(0deg);
-    }
-  }
-
-  @keyframes rotateImageOne {
-    from {
-      top: 20px;
-      transform: rotate(-10deg);
-    }
-    50% {
-      top: 0px;
-      transform: rotate(10deg);
-    }
-    to {
-      top: 20px;
-      transform: rotate(-10deg);
-    }
-  }
-
-  @keyframes rotateImageTwo {
-    from {
-      top: 0px;
-      transform: rotate(10deg);
-    }
-    50% {
-      top: 20px;
-      transform: rotate(-10deg);
-    }
-    to {
-      top: 0px;
-      transform: rotate(10deg);
-    }
-  }
-
   display: flex;
   flex-direction: row;
   width: 100%;

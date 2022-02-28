@@ -23,7 +23,7 @@ const ContactSection = ({
       <span className="btn-second-text">download our app</span>
     </button>
 
-    <div className="contact-icon-container" ref={contactIconContainer}>
+    <IconContainer ref={contactIconContainer}>
       {CONTACT_ICONS.map((icon) => {
         return (
           <img
@@ -34,54 +34,13 @@ const ContactSection = ({
           />
         );
       })}
-    </div>
+    </IconContainer>
   </ContactWrapper>
 );
 
 export default ContactSection;
 
 const ContactWrapper = styled.div`
-  &.bg-spin-up {
-    animation: bgSpinUp 10s ease;
-  }
-
-  @keyframes bgSpinUp {
-    from {
-      transform: rotate(0deg);
-    }
-    20% {
-      transform: rotate(-5deg);
-    }
-    to {
-      transform: rotate(0deg);
-    }
-  }
-
-  &.bg-spin-down {
-    animation: bgSpinDown 10s ease;
-  }
-
-  @keyframes bgSpinDown {
-    from {
-      transform: rotate(0deg);
-    }
-    20% {
-      transform: rotate(5deg);
-    }
-    to {
-      transform: rotate(0deg);
-    }
-  }
-
-  @keyframes slideToRightText {
-    from {
-      left: -182px;
-    }
-    to {
-      left: 230px;
-    }
-  }
-
   position: relative;
   width: 100%;
   height: 90vh;
@@ -147,14 +106,14 @@ const ContactWrapper = styled.div`
       animation-delay: 4s;
     }
   }
+`;
 
-  .contact-icon-container {
-    position: absolute;
-    z-index: 10;
-    width: 100vw;
-    height: 100vh;
-    transition: 1s all ease;
-  }
+const IconContainer = styled.div`
+  position: absolute;
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+  transition: 1s all ease;
 
   img {
     position: absolute;

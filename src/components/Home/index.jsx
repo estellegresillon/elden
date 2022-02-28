@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import styled from "styled-components";
 
-import Header from "../Header";
+import Header from "../common/Header";
 import Hero from "../Hero";
 import SectionConcept from "../SectionConcept";
 import ImageSection from "../ImageSection";
@@ -146,6 +146,7 @@ const HomeWrapper = styled.div`
   cursor: url("cursor.png"), auto;
   display: flex;
   flex-direction: column;
-  width: 100vw;
   overflow: hidden;
+  transition: 0.5s cursor ease;
+  width: 100vw;
 `;

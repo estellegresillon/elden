@@ -32,15 +32,6 @@ const TopBar = () => (
 export default TopBar;
 
 const TopBarWrapper = styled.div`
-  @keyframes menuUnderline {
-    from {
-      width: 0;
-    }
-    to {
-      width: 100%;
-    }
-  }
-
   display: flex;
   align-items: center;
   position: relative;

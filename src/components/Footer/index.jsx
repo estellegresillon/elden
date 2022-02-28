@@ -26,7 +26,7 @@ const Footer = ({ hotDogRef, isVisible }) => (
       <img className="cola" src="/cola.svg" alt="cola" />
     </div>
     <div className="home-footer">
-      <div className="home-footer-brand">&#x2661; 2022 Elden Ring</div>
+      <div className="home-footer-brand">© 2022 Elden Ring &#x2661;</div>
     </div>
   </FooterWrapper>
 );
@@ -39,20 +39,6 @@ const FooterWrapper = styled.div`
   position: absolute;
   bottom: 0;
   overflow: hidden;
-
-  @keyframes translateHotDog {
-    from {
-      right: 0;
-      transform: rotate(0deg);
-    }
-    70% {
-      transform: rotate(10deg);
-    }
-    to {
-      right: 18%;
-      transform: rotate(0deg);
-    }
-  }
 
   .footer-img {
     display: flex;

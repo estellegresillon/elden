@@ -32,38 +32,6 @@ const Careers = ({ careersRef }) => (
 export default Careers;
 
 const CareersWrapper = styled.div`
-  &.bg-spin-up {
-    animation: bgSpinUp 10s ease;
-  }
-
-  @keyframes bgSpinUp {
-    from {
-      transform: rotate(0deg);
-    }
-    20% {
-      transform: rotate(-5deg);
-    }
-    to {
-      transform: rotate(0deg);
-    }
-  }
-
-  &.bg-spin-down {
-    animation: bgSpinDown 10s ease;
-  }
-
-  @keyframes bgSpinDown {
-    from {
-      transform: rotate(0deg);
-    }
-    20% {
-      transform: rotate(5deg);
-    }
-    to {
-      transform: rotate(0deg);
-    }
-  }
-
   align-items: center;
   display: flex;
   flex-direction: column;
