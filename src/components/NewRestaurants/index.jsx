@@ -5,9 +5,7 @@ import Card from "components/common/Card";
 
 const NewRestaurants = ({ newRestaurantsContainer }) => (
   <NewRestaurantsWrapper ref={newRestaurantsContainer}>
-    <div className="home-new-title">
-      <span className="home-new-title-text">Newcomers @ Elden</span>
-    </div>
+    <h2 className="home-new-title">Newcomers @ Elden</h2>
 
     <div className="new-restaurants-container">
       {NEW_RESTAURANTS.map((newRest, i) => (
@@ -31,7 +29,7 @@ const NewRestaurantsWrapper = styled.div`
   background: pink;
 
   .home-new-title {
-    font-size: 30px;
+    font-size: 42px;
     font-weight: 700;
     margin-bottom: 30px;
     color: white;

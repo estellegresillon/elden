@@ -153,4 +153,19 @@ export const KeyFrames = createGlobalStyle`
     transform: rotate(10deg);
   }
 }
+
+@keyframes floatyPhone {
+  from {
+    margin-top: 0%;
+    transform: rotate(-35deg);
+  }
+  50% {
+    margin-top: 5%;
+    transform: rotate(-25deg);
+  }
+  to {
+    margin-top: 0%;
+    transform: rotate(-35deg);
+  }
+}
 `;

@@ -1,3 +1,26 @@
+export const INITIAL_PICTURE = "restaurants";
+
+export const CAREERS = [
+  {
+    title: "Deliver with Elden",
+    description:
+      "Ride with Elden and work at your own pace. By joining us you also get advantages and offers.",
+    picture: "delivery",
+  },
+  {
+    title: "Restaurants",
+    description:
+      "Become a partner and attract more clients. We do the delivery, you only think about preparing !",
+    picture: "restaurants",
+  },
+  {
+    title: "Careers",
+    description:
+      "Our mission is to shake up food delivery. It's an ambitious project and we need you !",
+    picture: "office",
+  },
+];
+
 export const CONCEPT_STEPS = [
   {
     nb: "one",

@@ -17,8 +17,7 @@ const SectionImage = ({ imageSectionRef }) => (
         </ButtonWrapper>
       </div>
     </div>
-    <div className="home-hero-scene-image-overlay"></div>
-    <div className="home-hero-scene-image"></div>
+    <img className="home-hero-scene-image" src="elden.png" alt="mobile app" />
   </SectionImageWrapper>
 );
 
@@ -89,7 +88,7 @@ const SectionImageWrapper = styled.div`
     display: flex;
     width: 70%;
     height: 85%;
-    margin-left: 20%;
+    margin: 0 30%;
     z-index: 2;
     opacity: 0;
     flex-direction: column;
@@ -119,29 +118,10 @@ const SectionImageWrapper = styled.div`
     }
   }
 
-  .home-hero-scene-image-overlay {
-    position: absolute;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    background-color: #fff;
-    animation: 2s overlayHome;
-    animation-fill-mode: forwards;
-  }
-
   .home-hero-scene-image {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 35%;
-    height: 55%;
-    border-radius: 32px;
-    background-image: url("/hero1.jpg");
-    background-attachment: fixed;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
+    height: 80%;
+    margin-left: 8%;
+    width: auto;
+    animation: 7s floatyPhone infinite;
   }
 `;
