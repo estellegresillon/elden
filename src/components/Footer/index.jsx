@@ -52,12 +52,15 @@ const FooterWrapper = styled.div`
       width: auto;
       margin-right: -2px;
     }
+
     .fried-potatoes {
       height: 20px;
     }
+
     .fried-chicken {
       height: 40px;
     }
+
     .hot-dog {
       position: absolute;
       height: 50px;
@@ -81,5 +84,11 @@ const FooterWrapper = styled.div`
     font-weight: 900;
     font-size: 14px;
     padding-left: 10vh;
+  }
+
+  @media screen and (max-width: 820px) {
+    .home-footer {
+      padding-left: 30px;
+    }
   }
 `;

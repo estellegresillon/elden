@@ -63,6 +63,11 @@ const ContactWrapper = styled.div`
     width: 45vw;
     height: 19vh;
     transition: 1s all ease;
+
+    @media screen and (max-width: 820px) {
+      font-size: 42px;
+      width: 80%;
+    }
   }
 
   .go-to-contact {
@@ -154,6 +159,23 @@ const IconContainer = styled.div`
       top: 85vh;
       right: 30vw;
       transform: rotate(42deg);
+    }
+
+    @media screen and (max-width: 820px) {
+      &.contact-burger,
+      &.contact-ice-cream {
+        top: 15vh;
+      }
+
+      &.contact-salad,
+      &.contact-pasta {
+        top: 75vh;
+      }
+
+      &.contact-lobster,
+      &.contact-pizza {
+        top: 45vh;
+      }
     }
   }
 `;

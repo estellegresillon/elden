@@ -31,9 +31,7 @@ const Hero = () => {
       <div className="hero-blend">
         <h1>Easy and eco-friendly delivery</h1>
       </div>
-      <ScrollIndicatorWrapper>
-        <div className="mouse-scroll-ball" />
-      </ScrollIndicatorWrapper>
+      <img className="home-hero-scene-image" src="elden.png" alt="mobile app" />
       <div className="dot blue-dot-center" />
       <div className="dot blue-dot-bottom" />
       <div className="dot blue-dot-right" />
@@ -59,14 +57,22 @@ const HeroWrapper = styled.div`
   position: relative;
   width: 100vw;
 
+  .home-hero-scene-image {
+    bottom: 0;
+    position: absolute;
+    transform: rotate(324deg);
+    width: 550px;
+  }
+
   .hero-blend {
-    align-items: center;
+    align-items: flex-start;
     background-color: white;
     color: black;
     display: flex;
     height: 100%;
     justify-content: center;
     mix-blend-mode: screen;
+    padding-top: 25vh;
     width: 100%;
 
     h1 {
@@ -76,26 +82,16 @@ const HeroWrapper = styled.div`
       width: 60%;
     }
   }
-`;
 
-const ScrollIndicatorWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  width: 20px;
-  height: 40px;
-  bottom: 5vh;
-  left: calc(50vw - 10px);
-  border: 3px solid #638dff;
-  border-radius: 32px;
+  @media screen and (max-width: 820px) {
+    .hero-blend h1 {
+      font-size: 56px;
+      width: 80%;
+    }
 
-  .mouse-scroll-ball {
-    width: 6px;
-    height: 6px;
-    margin-top: 10px;
-    border-radius: 50%;
-    background-color: #638dff;
-    animation: 4s scrollBall infinite;
+    .home-hero-scene-image {
+      bottom: -300px;
+    }
   }
 `;
 

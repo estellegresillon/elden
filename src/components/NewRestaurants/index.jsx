@@ -66,4 +66,16 @@ const NewRestaurantsWrapper = styled.div`
     transition: all 0.7s ease;
     box-shadow: 5px 5px 25px rgba(214, 31, 31, 0.2);
   }
+
+  @media screen and (max-width: 820px) {
+    height: auto;
+
+    .new-restaurants-container {
+      width: 90%;
+
+      .card {
+        border-radius: 0;
+      }
+    }
+  }
 `;

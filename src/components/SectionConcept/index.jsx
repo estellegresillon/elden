@@ -65,4 +65,14 @@ const SectionWrapper = styled.div`
       padding: 7px 2px;
     }
   }
+
+  @media screen and (max-width: 820px) {
+    flex-direction: column;
+    width: 80%;
+
+    .home-concept-step {
+      margin-bottom: 80px;
+      width: 100%;
+    }
+  }
 `;

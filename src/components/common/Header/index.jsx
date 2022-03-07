@@ -8,6 +8,7 @@ const TopBar = () => (
         Elden
       </div>
     </div>
+    <i className="fas fa-bars"></i>
     <div className="header-right">
       <div className="menu-link">
         <div>Order now</div>
@@ -15,10 +16,6 @@ const TopBar = () => (
       </div>
       <div className="menu-link">
         <div>Become a partner</div>
-        <div className="menu-underline" />
-      </div>
-      <div className="menu-link">
-        <div>About us</div>
         <div className="menu-underline" />
       </div>
       <div className="menu-link">
@@ -42,6 +39,10 @@ const TopBarWrapper = styled.div`
   top: 0;
   left: 0;
   z-index: 9999;
+
+  .fa-bars {
+    display: none;
+  }
 
   .header-left {
     display: flex;
@@ -76,7 +77,7 @@ const TopBarWrapper = styled.div`
 
     .menu-link {
       text-decoration: none;
-      margin-left: 50px;
+      margin-left: 30px;
       cursor: pointer;
       font-size: 12px;
       text-transform: uppercase;
@@ -98,6 +99,22 @@ const TopBarWrapper = styled.div`
           animation-fill-mode: forwards;
         }
       }
+    }
+  }
+
+  @media screen and (max-width: 820px) {
+    .fa-bars {
+      display: block;
+      margin-right: 30px;
+      margin-top
+    }
+
+    .header-right {
+      display: none;
+    }
+
+    .header-left .elden-logo {
+      margin: 0 30px;
     }
   }
 `;

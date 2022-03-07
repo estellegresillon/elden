@@ -3,11 +3,11 @@ import styled from "styled-components";
 
 import { CAREERS, INITIAL_PICTURE } from "utils/constants";
 
-const Careers = ({ careersRef }) => {
+const Careers = () => {
   const [picture, setPicture] = useState(INITIAL_PICTURE);
 
   return (
-    <CareersWrapper $picture={picture} ref={careersRef}>
+    <CareersWrapper $picture={picture}>
       <h2>Work with us</h2>
       <div className="careers-intro-wrapper">
         {CAREERS.map((career) => (
@@ -90,5 +90,23 @@ const CareersWrapper = styled.div`
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  @media screen and (max-width: 820px) {
+    flex-direction: column;
+    height: auto;
+
+    h2 {
+      position: relative;
+    }
+
+    .careers-intro-wrapper {
+      margin: 5%;
+      width: 90%;
+
+      .card {
+        border-radius: 0;
+      }
+    }
   }
 `;

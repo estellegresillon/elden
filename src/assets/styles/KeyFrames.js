@@ -33,7 +33,7 @@ export const KeyFrames = createGlobalStyle`
     transform: rotate(0deg);
   }
   20% {
-    transform: rotate(5deg);
+    transform: rotate(3deg);
   }
   to {
     transform: rotate(0deg);
@@ -45,7 +45,7 @@ export const KeyFrames = createGlobalStyle`
     transform: rotate(0deg);
   }
   20% {
-    transform: rotate(-5deg);
+    transform: rotate(-3deg);
   }
   to {
     transform: rotate(0deg);

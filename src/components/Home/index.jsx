@@ -29,7 +29,6 @@ const Home = () => {
   const contactTitle = useRef(null);
   const hotDogRef = useRef(null);
   const newRestaurantsContainer = useRef(null);
-  const careersRef = useRef(null);
   const prevCount = usePrevious(count);
 
   const moveContactElements = (e) => {
@@ -58,8 +57,6 @@ const Home = () => {
       imageSectionRef.current.classList.add("bg-spin-up");
       newRestaurantsContainer.current.classList.remove("bg-spin-down");
       newRestaurantsContainer.current.classList.add("bg-spin-up");
-      careersRef.current.classList.remove("bg-spin-down");
-      careersRef.current.classList.add("bg-spin-up");
     } else if (count > prevCount) {
       conceptRef.current.classList.remove("bg-spin-up");
       conceptRef.current.classList.add("bg-spin-down");
@@ -69,8 +66,6 @@ const Home = () => {
       imageSectionRef.current.classList.add("bg-spin-down");
       newRestaurantsContainer.current.classList.remove("bg-spin-up");
       newRestaurantsContainer.current.classList.add("bg-spin-down");
-      careersRef.current.classList.remove("bg-spin-up");
-      careersRef.current.classList.add("bg-spin-down");
     }
   }, [count, prevCount]);
 
@@ -128,7 +123,7 @@ const Home = () => {
       <SectionConcept conceptRef={conceptRef} />
       <ImageSection imageSectionRef={imageSectionRef} />
       <NewRestaurants newRestaurantsContainer={newRestaurantsContainer} />
-      <Careers careersRef={careersRef} />
+      <Careers />
       <ContactSection
         contactContainer={contactContainer}
         contactIconContainer={contactIconContainer}
